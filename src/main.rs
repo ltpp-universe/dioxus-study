@@ -1,5 +1,3 @@
-#![allow(non_snake_case)]
-
 use dioxus::prelude::*;
 use dioxus_logger::tracing::{info, Level};
 
@@ -15,10 +13,10 @@ fn main() {
     // Init logger
     dioxus_logger::init(Level::INFO).expect("failed to init logger");
     info!("starting app");
-    launch(App);
+    launch(app);
 }
 
-fn App() -> Element {
+fn app() -> Element {
     rsx! {
         Router::<Route> {}
     }
