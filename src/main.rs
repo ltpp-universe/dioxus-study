@@ -1,5 +1,17 @@
 use dioxus::prelude::*;
 use dioxus_logger::tracing::{info, Level};
+mod button;
+mod checkbox;
+mod dialog;
+mod img;
+mod input;
+mod input_number;
+mod link;
+mod radio;
+mod select;
+mod slider;
+mod switch;
+mod video;
 
 #[derive(Clone, Routable, Debug, PartialEq)]
 enum Route {
